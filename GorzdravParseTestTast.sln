@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GorzdravParseTestTast", "GorzdravParseTestTast\GorzdravParseTestTast.csproj", "{0C576B92-25B6-4272-8AE7-3796DE7089B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C576B92-25B6-4272-8AE7-3796DE7089B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C576B92-25B6-4272-8AE7-3796DE7089B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C576B92-25B6-4272-8AE7-3796DE7089B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C576B92-25B6-4272-8AE7-3796DE7089B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -8,21 +8,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e246a837-a528-41ff-9b66-4be0f266ad72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/GorzdravParseTestTast/Models/LoadPageTask.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GorzdravParseTestTast/Services/CsvWritter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GorzdravParseTestTast/Services/Parser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GorzdravParseTestTast/Services/SeleniumPageLoader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GorzdravParseTestTast/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GorzdravParseTestTast/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GorzdravParseTestTast/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GorzdravParseTestTast/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GorzdravParseTestTast/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GorzdravParseTestTast.sln" beforeDir="false" afterPath="$PROJECT_DIR$/GorzdravParseTestTask.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GorzdravParseTestTast/Services/GorzdravParser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GorzdravParseTestTast/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GorzdravParseTestTast/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GorzdravParseTestTask.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/GorzdravParseTestTask.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GorzdravParseTestTast/GorzdravParseTestTast.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GorzdravParseTestTast/GorzdravParseTestTast.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GorzdravParseTestTast/Interfaces/ICsvWritter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GorzdravParseTestTast/Interfaces/ICsvWritter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GorzdravParseTestTast/Interfaces/IPageLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GorzdravParseTestTast/Interfaces/IPageLoader.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GorzdravParseTestTast/Interfaces/IParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GorzdravParseTestTast/Interfaces/IParser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GorzdravParseTestTast/Models/LoadPageTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GorzdravParseTestTast/Models/LoadPageRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GorzdravParseTestTast/Models/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GorzdravParseTestTast/Models/Product.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GorzdravParseTestTast/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GorzdravParseTestTast/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GorzdravParseTestTast/Services/CsvWritter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GorzdravParseTestTast/Services/CsvWritter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GorzdravParseTestTast/Services/Parser.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GorzdravParseTestTast/Services/SeleniumPageLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GorzdravParseTestTast/Services/SeleniumPageLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GorzdravParseTestTast/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/GorzdravParseTestTast/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +34,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/12d395a5c403b433f4f399450103b6c868beddf77bed99d78d7e2e224ce6f7/HttpConnectionPool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2f2b1d92f1ffcf2dabd664473f8c9dafa6039595ac228ce4b75a0f1619c5991/AsyncTaskMethodBuilderT.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/69bc68e9420a6e628e801fd8651369ad2af3593c76dcc11a4270ec68d/ExecutionContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c794baab3518d05f8546334d672798d62c10be97c2de99a62b39b885a637/TaskContinuation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GorzdravParseTestTast/Interfaces/ICsvWritter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GorzdravParseTestTast/Interfaces/IPageLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GorzdravParseTestTast/Interfaces/IParser.cs" root0="FORCE_HIGHLIGHTING" />
@@ -107,7 +107,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1771319880857</updated>
-      <workItem from="1771319883293" duration="5328000" />
+      <workItem from="1771319883293" duration="12503000" />
     </task>
     <task id="LOCAL-00001" summary="Init structure">
       <option name="closed" value="true" />
@@ -117,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771320833532</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Test Selenium page loader">
+      <option name="closed" value="true" />
+      <created>1771325442392</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1771325442392</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,7 +136,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Init structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init structure" />
+    <MESSAGE value="Test Selenium page loader" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test Selenium page loader" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -145,6 +154,32 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GorzdravParseTestTast/Services/SeleniumPageLoader.cs</url>
+          <line>48</line>
+          <properties documentPath="C:\Users\JustEngineer\RiderProjects\GorzdravParseTestTast\GorzdravParseTestTast\Services\SeleniumPageLoader.cs" containingFunctionPresentation="Lambda expression inside Method 'GetPageAsync'">
+            <startOffsets>
+              <option value="1693" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1719" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GorzdravParseTestTast/Services/SeleniumPageLoader.cs</url>
+          <line>45</line>
+          <properties documentPath="C:\Users\JustEngineer\RiderProjects\GorzdravParseTestTast\GorzdravParseTestTast\Services\SeleniumPageLoader.cs" containingFunctionPresentation="Lambda expression inside Method 'GetPageAsync'">
+            <startOffsets>
+              <option value="1595" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1665" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

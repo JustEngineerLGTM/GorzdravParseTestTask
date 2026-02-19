@@ -101,7 +101,7 @@ public sealed class SeleniumPageLoader : IDisposable, IPageLoader
                                 })();
                                 """;
         
-                await Task.Delay(Random.Shared.Next(2500, 3000));
+                await Task.Delay(Random.Shared.Next(1000, 1200));
                 var responseObj = _driver.ExecuteAsyncScript(script);
                 var json = responseObj as string;
                 Console.WriteLine($">>> Загрузка страниицы: {page}");
